@@ -1,30 +1,12 @@
 package algo;
 
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.Charset;
-
 public class Main {
 
 	public static void main(String[] args) {
 
-//		int[] sortedNumbers = createArray(Integer.MAX_VALUE - 5);
+		int[] sortedNumbers = createArray(500);
 		
-		String iso = "»¿“ŸÃ‡˘";
-		
-//		System.out.println(Charset.availableCharsets());
-		try {
-//			System.out.println(Charset.defaultCharset());
-			byte[] latin = iso.getBytes("ISO-8859-1");
-			byte[] utf8 = new String(latin, "ISO-8859-1").getBytes("UTF-8");
-			String utf = new String(utf8, "UTF-8");
-			System.out.println(utf);
-			iso.getBytes("UTF-8");
-			
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-
-//		System.out.println(binarySearch(50, sortedNumbers));
+		System.out.println(binarySearch(50, sortedNumbers));
 
 	}
 

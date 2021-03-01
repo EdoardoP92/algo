@@ -6,11 +6,12 @@ public class Main {
 
 		int[] sortedNumbers = createArray(500);
 		
-		System.out.println(binarySearch(50, sortedNumbers));
+		System.out.println(binarySearch(500, sortedNumbers));
+		System.out.println(cleanString("à\f\t"));
 
 	}
 
-	//Complessit� logaritmica O(log n)
+	//Complessità logaritmica O(log n)
 
 	/**
 	    Logarithmic complexity algorithms are very fast, and their performance hardly degrades as
@@ -43,5 +44,19 @@ public class Main {
 		}
 
 		return sortedNumbers;
+	}
+	
+	private static String cleanString(String text) {
+		
+		// strips off all non-ASCII characters
+        text = text.replaceAll("[^\\x00-\\x7F]", "x");
+ 
+        // erases all the ASCII control characters
+        text = text.replaceAll("[\\p{Cntrl}&&[^\r\n\t]]", "y");
+        
+        // removes non-printable characters from Unicode
+        text = text.replaceAll("\\p{C}", "z");
+        
+		return text;
 	}
 }

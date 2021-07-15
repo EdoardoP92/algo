@@ -8,6 +8,7 @@ public class Main {
 		
 		System.out.println(binarySearch(500, sortedNumbers));
 		System.out.println(cleanString("à\f\t"));
+		System.out.println(cleanString("åµbŽßíI¯µ’#Â#»"));
 
 	}
 

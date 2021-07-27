@@ -12,7 +12,7 @@ public class Main {
 
 	}
 
-	//Complessità logaritmica O(log n)
+	// Complessità logaritmica O(log n)
 
 	/**
 	    Logarithmic complexity algorithms are very fast, and their performance hardly degrades as
